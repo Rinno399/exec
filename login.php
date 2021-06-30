@@ -5,6 +5,10 @@
          color:green;
      
      	}
+	
+     #pic{
+     color:green;
+     }
 
 
     
