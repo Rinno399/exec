@@ -47,38 +47,8 @@ body{
 |                  RINNO                   |
 ┕━━━━━━━━━━━━━━━━━━━━━★━━━━━━━━━━━━━━━━━━━━┙
 
-</pre>
-<form action="" method="post">
-<input type="text" name="cmd" id="col_cmd" placeholder="eg_127.0.0.1">
-<button name="cmd_btn" id="col_cmd">Enter</button>
-</form>
-
-<div id="result">
-<?php
-$ban = array(
-  ';' => '_',
-  '&&' => '_'
-
-);
-
-if (isset($_POST['cmd_btn'])) {
-  $cmd=$_POST['cmd'];
-  $cmd=str_replace(array_keys($ban),$ban,$cmd);
-  if ($cmd == "") {
-    echo "Input value is Empty";
-    exit();
-  }
-  if (preg_match('/')) {
-    // code...
-  }
-  system('ping -c 4 '.$cmd);
-
-
-}
-?>
-</div>
+</pre><br><br><br>
+<?php include("footer.php");?>
 </center>
-
-
 </body>
 </html>
